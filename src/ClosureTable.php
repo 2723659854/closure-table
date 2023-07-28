@@ -8,4 +8,8 @@ class ClosureTable
     {
         return 'execute';
     }
+
+    public function talk(){
+        return "我只是一个单纯的测试而已";
+    }
 }

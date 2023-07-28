@@ -15,7 +15,14 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=7.0"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --provider=\"Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider\" --force"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
