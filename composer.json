@@ -1,0 +1,26 @@
+{
+    "name": "xiaosongshu/closure-table",
+    "description": "\"测试发布一个laravel插件\"",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xiaosongshu\\ClosureTable\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "xiaosongshu",
+            "email": "2723659854@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider"
+            ]
+        }
+    }
+}
