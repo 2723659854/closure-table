@@ -19,9 +19,7 @@
         "php": ">=7.0"
     },
     "scripts": {
-        "post-package-install": [
-            "@php artisan vendor:publish --provider=\"Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider\" --force"
-        ]
+
     },
     "extra": {
         "laravel": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Xiaosongshu\ClosureTable\Facades;
+namespace Xiaosongshu\ClosureTable;
 
 use Illuminate\Console\Command;
 

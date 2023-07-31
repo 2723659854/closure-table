@@ -2,7 +2,6 @@
 
 namespace Xiaosongshu\ClosureTable;
 use Illuminate\Support\ServiceProvider;
-use Xiaosongshu\ClosureTable\Facades\TalkCommand;
 
 class ClosureTableServiceProvider extends ServiceProvider
 {
