@@ -27,7 +27,8 @@ class ClosureTableServiceProvider extends ServiceProvider
         /** 加上参数 --force 表示强制发布 */
         $this->publishes([
             __DIR__ . '/config/closure-table.php' => config_path('closure-table.php'),
-        ],'just');/** 添加一个tag标签“just” */
+        ],'just');
+        /** 添加一个tag标签“just” ,加tag标签的作用就是，不需要输入那么长一段的路径，相当于是缩写，效果是一样的额 */
 
         /** 如果实在命令行运行 */
         if ($this->app->runningInConsole()) {

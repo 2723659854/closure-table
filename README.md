@@ -69,6 +69,10 @@ app(服务者名称)的方式调用，可以直接静态化方法的调用。
 php artisan vendor:publish --provider="Xiaosongshu\ClosureTable\ClosureTableServiceProvider" --force
 ```
 这个命令的作用是将配置文件复制到项目的config目录下面的。
+#### 关于composer.json文件中的脚本scripts
+参考文件：https://www.likecs.com/show-1020064.html<br>
+https://www.wenjiangs.com/doc/xgpri2m3
+
 
 
 
