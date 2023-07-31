@@ -27,7 +27,7 @@ class ClosureTableServiceProvider extends ServiceProvider
         /** 加上参数 --force 表示强制发布 */
         $this->publishes([
             __DIR__ . '/config/closure-table.php' => config_path('closure-table.php'),
-        ]);
+        ],'just');/** 添加一个tag标签“just” */
 
         /** 如果实在命令行运行 */
         if ($this->app->runningInConsole()) {
