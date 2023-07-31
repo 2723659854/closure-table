@@ -1,34 +1,39 @@
 {
-    "name": "xiaosongshu/closure-table",
-    "description": "\"测试发布一个laravel插件\"",
-    "type": "library",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Xiaosongshu\\ClosureTable\\": "src/"
-        }
+  "name": "xiaosongshu/closure-table",
+  "description": "\"测试发布一个laravel插件\"",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Xiaosongshu\\ClosureTable\\": "src/"
     },
-    "authors": [
-        {
-            "name": "xiaosongshu",
-            "email": "2723659854@qq.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.0"
-    },
-    "scripts": {
-
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider"
-            ],
-            "aliases": {
-                "SongShu": "Xiaosongshu\\ClosureTable\\Facades\\SongShu"
-            }
-        }
+    "files": [
+      "./src/helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "xiaosongshu",
+      "email": "2723659854@qq.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0"
+  },
+  "scripts": {
+    "post-package-install": [
+      "@php artisan vendor:publish --provider=\"Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider\" --force"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider"
+      ],
+      "aliases": {
+        "SongShu": "Xiaosongshu\\ClosureTable\\Facades\\SongShu"
+      }
+    }
+  }
 }

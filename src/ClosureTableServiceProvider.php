@@ -19,6 +19,7 @@ class ClosureTableServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/closure-table.php' => config_path('closure-table.php'),
         ]);
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 TalkCommand::class
