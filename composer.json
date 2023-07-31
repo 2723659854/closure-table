@@ -19,7 +19,7 @@
         "php": ">=7.0"
     },
     "scripts": {
-        "post-autoload-dump": [
+        "post-package-install": [
             "@php artisan vendor:publish --provider=\"Xiaosongshu\\ClosureTable\\ClosureTableServiceProvider\" --force"
         ]
     },
