@@ -73,6 +73,8 @@ php artisan vendor:publish --provider="Xiaosongshu\ClosureTable\ClosureTableServ
 参考文件：https://www.likecs.com/show-1020064.html<br>
 https://www.wenjiangs.com/doc/xgpri2m3
 
+#### 删除暂存区的文件 git rm --cached packages/xiaosongshu/closure-table 
+
 
 
 
