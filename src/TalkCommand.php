@@ -1,5 +1,5 @@
 <?php
-
+/** 这里的命名空间不能乱写 */
 namespace Xiaosongshu\ClosureTable;
 
 use Illuminate\Console\Command;
@@ -18,7 +18,7 @@ class TalkCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = '这里创建一个命令行，可以用来处理和扩展相关的逻辑';
 
     /**
      * Create a new command instance.
