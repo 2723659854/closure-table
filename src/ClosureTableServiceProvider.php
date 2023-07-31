@@ -26,7 +26,7 @@ class ClosureTableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('closure-table', function () {
+        $this->app->singleton('closureTable', function () {
             return new ClosureTable;
         });
     }
@@ -40,6 +40,6 @@ class ClosureTableServiceProvider extends ServiceProvider
 
     {
         // 因为延迟加载 所以要定义 provides 函数 具体参考laravel 文档
-        return ['closure-table'];
+        return ['closureTable'];
     }
 }
