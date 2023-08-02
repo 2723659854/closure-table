@@ -37,6 +37,9 @@
       "aliases": {
         "SongShu": "Xiaosongshu\\ClosureTable\\Facades\\SongShu"
       }
+    },
+    "hyperf": {
+      "config": "Xiaosongshu\\ClosureTable\\ConfigProvider"
     }
   }
 }
