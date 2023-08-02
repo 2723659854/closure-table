@@ -4,8 +4,8 @@ namespace Xiaosongshu\ClosureTable;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * @purpose 这里就是服务提供者
- * @note 这个实际上是工厂模式，插件则是具体的加工商。所有的功能都通过app()方法调用，用户不关心怎么实现的业务，直接调用App就可以了
+ *  这里就是服务提供者
+ *  这个实际上是工厂模式，插件则是具体的加工商。所有的功能都通过app()方法调用，用户不关心怎么实现的业务，直接调用App就可以了
  */
 class ClosureTableServiceProvider extends ServiceProvider
 {
@@ -19,7 +19,7 @@ class ClosureTableServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap the application services.
-     * @note 启动项目的时候，需要启动的服务
+     *  启动项目的时候，需要启动的服务
      */
     public function boot()
     {
@@ -41,8 +41,8 @@ class ClosureTableServiceProvider extends ServiceProvider
 
     /**
      * Register the application services.
-     * @note 注册服务提供者，这是比较关键的一步，工厂模式：一个别名对应一个服务类
-     * @note 这个别名，在门面类当中也会用到的，所以很关键
+     *  注册服务提供者，这是比较关键的一步，工厂模式：一个别名对应一个服务类
+     *  这个别名，在门面类当中也会用到的，所以很关键
      */
     public function register()
     {

@@ -2,7 +2,7 @@
 
 namespace Xiaosongshu\ClosureTable;
 /**
- * @purpose 兼容 hyperf
+ *  兼容 hyperf
  */
 class ConfigProvider
 {
